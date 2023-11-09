@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .botao {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao.verificando {
+      background-color: #e74c3c;
+      pointer-events: none;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <button id="verificarBtn" class="botao" onclick="verificar()">Verificar</button>
+
+  <script>
+    function verificar() {
+      var btn = document.getElementById("verificarBtn");
+      btn.classList.add("verificando");
+      btn.innerHTML = "Verificando...";
+
+      // Simule o processo de verificação aqui (pode usar um setTimeout para simular um atraso)
+      setTimeout(function() {
+        // Após a verificação, restaure o botão
+        btn.classList.remove("verificando");
+        btn.innerHTML = "Verificar";
+      }, 3000); // Simulando 3 segundos de verificação
+    }
+  </script>
+</body>
+</html>
