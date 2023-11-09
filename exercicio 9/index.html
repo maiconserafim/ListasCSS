@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .painel-estatisticas {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .estatistica {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .titulo {
+            width: 100px;
+        }
+
+        .barra {
+            flex-grow: 1;
+            height: 20px;
+            background-color: #3498db;
+        }
+
+        .phishing {
+            width: 25%;
+            background-color: #e74c3c;
+        }
+
+        .malware {
+            width: 15%;
+            background-color: #f1c40f;
+        }
+
+        .ddos {
+            width: 10%;
+            background-color: #27ae60;
+        }
+
+        .ransomware {
+            width: 20%;
+            background-color: #9b59b6;
+        }
+
+        .valor {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="painel-estatisticas">
+        <div class="estatistica">
+            <div class="titulo">Phishing</div>
+            <div class="barra phishing"></div>
+            <div class="valor">25%</div>
+        </div>
+        <div class="estatistica">
+            <div class="titulo">Malware</div>
+            <div class="barra malware"></div>
+            <div class="valor">15%</div>
+        </div>
+        <div class="estatistica">
+            <div class="titulo">DDoS</div>
+            <div class="barra ddos"></div>
+            <div class="valor">10%</div>
+        </div>
+        <div class="estatistica">
+            <div class="titulo">Ransomware</div>
+            <div class="barra ransomware"></div>
+            <div class="valor">20%</div>
+        </div>
+    </div>
+</body>
+</html>
