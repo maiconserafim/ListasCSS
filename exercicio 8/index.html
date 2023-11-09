@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #modoNoturnoInput {
+            display: none;
+        }
+
+        #modoNoturnoLabel {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #modoNoturnoLabel:hover {
+            background-color: #1c6bb3;
+        }
+
+        #modoNoturnoInput:checked + .container {
+            background-color: #111;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="modoNoturnoInput">
+    <label for="modoNoturnoInput" id="modoNoturnoLabel">Modo Noturno</label>
+    
+    <div class="container">
+        <h1>Protocolos de Segurança Cibernética</h1>
+        <p>Esta é a página que contém informações sobre protocolos de segurança cibernética.</p>
+    </div>
+</body>
+</html>
